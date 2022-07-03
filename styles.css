@@ -6,6 +6,8 @@
   --accent-color: hsl(0, 0%, 95%);
   --heading-font: "Big Shoulders Display", cursive;
   --paragraph-font: "Lexend Deca", sans-serif;
+  /* Scale everything down 20%, accidentally was zoomed in on Google Chrome when creating  */
+  font-size: 0.8em;
 }
 
 /* * {
