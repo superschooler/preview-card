@@ -1,0 +1,126 @@
+:root {
+  --bg-1: hsl(31, 77%, 52%);
+  --bg-2: hsl(184, 100%, 22%);
+  --bg-3: hsl(179, 100%, 13%);
+  --paragraph-color: hsla(0, 0%, 100%, 0.75);
+  --accent-color: hsl(0, 0%, 95%);
+  --heading-font: "Big Shoulders Display", cursive;
+  --paragraph-font: "Lexend Deca", sans-serif;
+}
+
+/* * {
+  border: 1px solid pink;
+} */
+
+body {
+  font-family: var(--paragraph-font);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* TODO remove */
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em;
+}
+
+.cardy {
+  padding: 3.5em !important;
+}
+
+.card--1 {
+  background-color: var(--bg-1);
+  border-radius: 0.625em 0.625em 0 0;
+}
+
+.button--1 {
+  color: var(--bg-1);
+}
+
+.button--1:hover {
+  border: 0.25em solid var(--accent-color);
+  color: var(--accent-color);
+  background-color: var(--bg-1);
+}
+
+.card--2 {
+  background-color: var(--bg-2);
+}
+
+.button--2 {
+  color: var(--bg-2);
+}
+
+.button--2:hover {
+  border: 0.25em solid var(--accent-color);
+  color: var(--accent-color);
+  background-color: var(--bg-2);
+}
+
+.card--3 {
+  background-color: var(--bg-3);
+  border-radius: 0 0 0.625em 0.625em;
+}
+
+.button--3 {
+  color: var(--bg-3);
+}
+
+.button--3:hover {
+  border: 0.25em solid var(--accent-color);
+  color: var(--accent-color);
+  background-color: var(--bg-3);
+}
+
+.card__icon {
+  display: block;
+  width: 5em;
+  height: auto;
+}
+
+.card__title {
+  text-transform: uppercase;
+  color: var(--accent-color);
+  font-family: var(--heading-font);
+  margin: 0.875em 0 0.5em 0;
+  font-size: 3.25em;
+}
+
+.card__description {
+  color: var(--paragraph-color);
+  font-size: 1.175em;
+}
+
+.card__button {
+  background-color: var(--accent-color);
+  margin-top: 1em;
+  height: 4em;
+  border-radius: 2em;
+  font-size: 1.175em;
+  padding: 0 2.5em;
+  border: none;
+}
+
+/* Medium Screen */
+@media (min-width: 767.98px) {
+  .card--1 {
+    border-radius: 0.625em 0 0 0;
+  }
+  .card--2 {
+    border-radius: 0 0.625em 0 0;
+  }
+  .card--3 {
+    border-radius: 0 0 0.625em 0.625em;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 991.98px) {
+  .card--1 {
+    border-radius: 0.625em 0 0 0.625em;
+  }
+  .card--2 {
+    border-radius: 0;
+  }
+  .card--3 {
+    border-radius: 0 0.625em 0.625em 0;
+  }
+}
