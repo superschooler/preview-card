@@ -7,7 +7,7 @@
   --heading-font: "Big Shoulders Display", cursive;
   --paragraph-font: "Lexend Deca", sans-serif;
   /* Scale everything down 20%, accidentally was zoomed in on Google Chrome when creating  */
-  font-size: 0.8em;
+  font-size: 0.85em;
 }
 
 /* * {
@@ -34,7 +34,6 @@ body {
 
 .card--1 {
   background-color: var(--bg-1);
-  border-radius: 0.625em 0.625em 0 0;
 }
 
 .button--1 {
@@ -63,7 +62,6 @@ body {
 
 .card--3 {
   background-color: var(--bg-3);
-  border-radius: 0 0 0.625em 0.625em;
 }
 
 .button--3 {
@@ -103,30 +101,4 @@ body {
   font-size: 1.175em;
   padding: 0 2.5em;
   border: none;
-}
-
-/* Medium Screen */
-@media (min-width: 767.98px) {
-  .card--1 {
-    border-radius: 0.625em 0 0 0;
-  }
-  .card--2 {
-    border-radius: 0 0.625em 0 0;
-  }
-  .card--3 {
-    border-radius: 0 0 0.625em 0.625em;
-  }
-}
-
-/* Large Screen */
-@media (min-width: 991.98px) {
-  .card--1 {
-    border-radius: 0.625em 0 0 0.625em;
-  }
-  .card--2 {
-    border-radius: 0;
-  }
-  .card--3 {
-    border-radius: 0 0.625em 0.625em 0;
-  }
 }
